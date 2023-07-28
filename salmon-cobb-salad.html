@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salmon Cobb Salad</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+        .dark {
+            background-color: black;
+            color: aliceblue;
+        }
+        button{
+            cursor: pointer;
+            text-align: center;
+            padding: 5px;
+            margin-left: auto;
+
+        }
+        .d-button {
+            position: relative; left: 655px; top: -30px;
+        }
+        
+
+    </style>
 </head>
 <body>
-    <a href="index.html"><button><h1>Home</h1></button></a>
+    <a href="index.html"><button>Home</button></a> <br>
+    <button class="d-button" onclick="myFunction()">Switch mode</button>
     <h1>Salmon Cobb Salad</h1>
     <!-- intro: -->
     <p>
@@ -96,5 +118,12 @@
             </li>
         </ol>
     </fieldset>
+    <script>
+        function myFunction() {
+            let element = document.body;
+            element.classList.toggle("dark");
+        }
+
+    </script>
 </body>
 </html>

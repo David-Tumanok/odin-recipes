@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+        .dark {
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+        }
+        button{
+            cursor: pointer;
+            text-align: center;
+            position: relative; left: 655px; top: -50px;
+            margin-left: auto;
+
+        }
+    
+    </style>
 </head>
 <body>
     <h1>
         Odin Recipes
     </h1>
+    <button onclick="myFunction()">Switch mode</button>
     <p>
         Here you can find som amazing recipes!
     </p>
@@ -26,7 +44,11 @@
 
     </ul>
     <script>
-        console.log(1+1)
+        function myFunction() {
+            let element = document.body;
+            element.classList.toggle("dark");
+        }
+
     </script>
     
 </body>
